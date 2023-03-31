@@ -1,0 +1,249 @@
+/* coloring is named way and hex color and rgb colors */
+h1{
+    color: yellow;
+}
+
+.bgcolor{
+    background-color: #ff0000;
+}
+
+body{
+    background-color:beige;
+}
+
+/* setting background image using id */
+/* background repeat */
+ #bgmi{
+    background-image: url(/image/bird.jpg);
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+
+ }
+
+ /* borders can be given indiviual values */
+ .border{
+ border-bottom: 1px solid black;
+ border-color: aqua;
+ border-width: 2px;
+ border-style: double;
+ padding: 10px;
+ }
+
+ /* padding ex */
+.paddingex{
+    border: 1px solid black;
+    padding:5px;
+    padding:5px 10px 6px 7px;
+    padding-top: 0%;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+}
+
+.marginex{
+    border: 2px solid black;
+    margin-top:50px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.margincenter{
+    border:1px solid black;
+    height: 50px;
+    width: 60px;
+    margin: 20px auto;
+    outline: 5px solid red;
+    cursor: crosshair;
+}
+
+.color{
+    color:rgb(255,255,255);
+}
+ 
+.color1{
+    color: #ff0000;
+ }
+
+ /* text align */
+
+ .taleft{
+    text-align: left;
+ }
+
+ .tajustify{
+    text-align: justify;
+ }
+
+ .taright{
+    text-align: right;
+ }
+
+ .tacenter{
+    text-align: center;
+ }
+
+ /* text decoration */
+
+ .textdecoration{
+    text-decoration: underline overline line-through red;
+    text-decoration-style:solid;
+    text-decoration-thickness: 1px;
+    text-decoration-color:blue ;
+
+ }
+
+ /* text transform is normally capital and smaller of text */
+
+ .texttransformlower{
+    text-transform: lowercase;
+ }
+
+ .texttransformupper{
+    text-transform: uppercase;
+ }
+.texttransformcap{
+    text-transform: capitalize;
+}
+
+.texttransform{
+    text-transform: intital;
+}
+
+/* text indent the space at begining of text */
+
+.textindent{
+    text-indent: 50px;
+}
+
+.textindentleft{
+    text-indent: -3em;
+}
+
+/* text spacing */
+
+.textspacing{
+    letter-spacing: 1px;
+}
+
+.textspace1{
+    letter-spacing: -1.5px;;
+}
+
+/* line height  */
+
+.lineheight{
+    line-height:2;
+}
+
+.lineheight1{
+    line-height:10px;
+}
+
+.lineheight2{
+    line-height:50%;
+}
+
+/* text direction */
+
+.textdirection{
+    direction: ltr;
+}
+
+.direction1{
+    direction: rtl;
+}
+
+/* word spacing can be given in cm, px, em, and percentage etc*/
+
+.wordspacing{
+    word-spacing: 2em ;
+}
+
+/* sans and serif font family */
+
+.sans{
+    font-family: lackey, Arial, Helvetica, sans-serif;
+}
+
+.serif{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fontfamily{
+    font-family: "Gills Sans Extrabold" cursive;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* font style */
+
+#fontstyle{
+    font-style: italic;
+}
+
+/* font height */
+
+.fontsize{
+    font-size: 100px;
+}
+
+.fontsize1{
+    font-size:90%;
+}
+
+.fontsize3{
+    font-size:50px;
+}
+.fontsize4{
+    font-size:50%;
+}
+
+/* font weight */
+.fw{
+    font-family: 'roboto', sans-serif;
+}
+
+.fontweight{
+    font-weight: 900;
+}
+
+.fontweight1{
+    font-weight: 700;
+}
+
+.fontweight2{
+    font-weight: 500;
+}
+
+.fontweight3{
+    font-weight: 400;
+}
+
+.fontweight4{
+    font-weight: 300;
+}
+
+
+/* FONT VARIANTS */
+.fv{
+    font-variant: small-caps;
+}
+.fontvariant{
+    font-variant: small-caps;
+}
+
+/* font awesome */
+.new-cdn{
+    color:blue;
+    font-size: 100px;
+}
+
+/* links pseudo selectors */
+
+.link1{
+    color:blueviolet;
+    text-decoration: none;
+}

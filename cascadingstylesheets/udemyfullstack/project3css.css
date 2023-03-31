@@ -1,0 +1,162 @@
+
+body {
+    margin:0;
+    background-color: #e6f9ff;
+}
+#brand{
+    text-align: center;
+    font-size:30px;
+    text-decoration: none;
+    background-color: #0099cc;
+    position: fixed;
+    display:block;
+    width:100%;
+    padding-bottom: 20px;
+    color:white;
+    display:block;
+    top:0;
+    font-family: 'Silkscreen', cursive;
+    z-index: 1;
+}
+
+#brand:hover{
+    color:black;
+    font: bold;
+}
+
+nav{
+    margin-bottom: 55px;
+}
+
+
+#container{
+   
+    background-color:#e6f9ff;
+    text-align: center;
+    border:5px solid #290033;
+}
+
+#nav-title{
+    
+}
+
+.nav{
+    padding:0;
+    margin:0;   
+   
+}
+
+li{
+    background-color: #290033;
+    display: inline-block;
+    width:19%;
+    font-size: 25px;
+    padding-top:10px;
+    margin-left:5px;
+    overflow-x: scroll;
+}
+
+
+[href^='#']{
+    color:white;
+}
+
+[href^='#']:hover{
+    color:green;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+[href^='#']:active{
+    color:red;
+}
+
+#body{
+    text-align: center;
+    
+    font-size:large;
+    
+}
+
+em{
+    font-weight:bold;
+}
+
+blockquote{
+    text-decoration:dashed;
+    font-family:'Playfair Display', serif;
+    font-weight:600;
+}
+
+.row{
+    border-top:2px solid black;
+    text-align:center;
+}
+
+.col1,.col2,.col3{
+    display:inline-block;
+    font-weight: 700;
+    padding:20px;
+    margin:0 auto;
+    text-transform: uppercase;
+    
+}
+
+.full-col{
+    border-top:2px solid black;
+    padding:30px;
+    font-weight: 600;
+    font-size:20px;
+   
+}
+
+.col1{
+    float:left;
+    position: relative;
+
+}
+
+.col3{
+    float:right;
+}
+
+.col1:hover::after{
+    display:inline-block;
+    width:100px;
+    height:70px;
+    background-color: #bebebe;
+    position:absolute;
+    content:'This is the left column';
+    text-align: center;
+    background-color: 	 #d24dff;
+}
+
+.col2:hover::after{
+    display:inline-block;
+    width:100px;
+    height:70px;
+    background-color: #bebebe;
+    position:absolute;
+    content:'This is the middle column';
+    text-align: center;
+    background-color:#d24dff;
+}
+
+.col3:hover::before{
+    display:inline-block;
+    width:100px;
+    height:70px;
+    background-color: #bebebe;
+    position:absolute;
+    content:'This is the right column';
+    text-align: center;
+    background-color: #d24dff;
+}
+
+
+
+
+
+
+
+ 

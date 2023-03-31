@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions project</title>
+</head>
+<body>
+    <p id="amount_total"></p>
+
+
+
+    <script>
+        function tip_cals(total_amount,tip,returntiponly=false)
+        {
+            tip = tip/100;
+            var tip_amount = total_amount*tip;
+            total_amount=total_amount+tip_amount;
+            if(returntiponly){
+                return tip_amount;
+            }
+            return total_amount;
+        }
+
+        var totalBill=tip_cals(25,10);
+        console.log("total amount is:"+totalBill)
+
+        var totalTip=tip_cals(25,10,true);
+        console.log("total tip is: "+totalTip)
+
+    </script>
+    
+</body>
+</html>

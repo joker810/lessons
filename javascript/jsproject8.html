@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal project</title>
+</head>
+<style>
+    .Modal-container{
+        background-color: #bebebe;
+        position: fixed;
+        top:50%;
+        left:50%;
+        width:80%;
+        border:1px solid black;
+        padding:20px;
+        transform:translate(-50%,-50%);
+        display:none;
+    }
+    
+</style>
+<body>
+    <button class="Modalopen">Open modal</button>
+    <div class="Modal-container close-btn" >
+        <h3 class="js-title">Welcome to modal</h3>
+        <label for="fname">first name</label>
+        <input type="text" id="fname"> <br>
+        <label for="lname">last name</label>
+        <input type="text" id="lname"> <br>
+        <label for="email">E-mail </label>
+        <input type="email" id="email"> <br>
+        <button class="close-btn">close</button>
+    </div>
+    
+    
+
+
+    <script>
+        const Modalopen=document.querySelector(".Modalopen")
+        const closebtn=document.querySelector(".close-btn")
+        const modalContainer=document.querySelector(".Modal-container")
+
+        class Modal{
+            constructor(title)
+            {
+               this.modalContainer=document.querySelector(".Modal-container")
+            
+            }
+            open(){
+                this.modalContainer.style.display='initial'
+            }
+            close(){
+                this.modalContainer.style.display="none"
+            }
+            changeTitle(title)
+            {
+                this.modalContainer.querySelector(".js-title").innerText=title
+            }
+        }
+        const modal = new Modal()
+
+        Modalopen.addEventListener('click',function(event){modal.open()
+        })
+
+            closebtn.addEventListener('click',function(event){
+                modal.close()
+            })
+    </script>
+</body>
+</html>

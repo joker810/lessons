@@ -1,0 +1,142 @@
+sass syntheticaly awesome style sheet.
+scss: sassy cascading style sheet.
+
+in sass we can create variable starting with 
+
+sass is usefull when number of element needs change its color.in that case we can just change value in sass
+
+$variable:value;
+
+h1{
+color:$variable;
+}
+
+nesting in scss
+
+css: h1 p span {
+properties;
+}
+
+scss: the parent element can be nested with child element for shorter syntax; in sass.
+
+div{
+ul{
+property;
+}
+li{
+property;
+}
+}
+
+@mixin is function in sass that allow reuse group of css properties.
+
+css property takes time to load for all the browser without proper prefixes example: webkit, moz ,ms,etc.
+
+with @mixin declared we can run the set with single line again and again.
+
+to call the the @mixin method we use @include.
+
+@mixin css-name($parameter){
+ -webkit border:$parameter;
+ -ms-border:$parameter;
+ -moz-borer:$parameter;
+ border:parameter;
+}
+
+div{
+ @include css-name(value);
+}
+
+just like js we can use if , else if and else in css
+
+@mixin cssname($val){
+ @if $val==something{
+	property:value;
+}
+ @else if $val==something{
+	property:value;
+}
+@else{
+ 	property:value;
+}
+}
+
+
+@for loop in sass has two types 
+
+from 1 through 6 : this includes the last index number
+
+from 1 to 6: this excludes the last index number.
+
+takes class of text-1 to text-6
+
+to loop through all the number we use loop
+
+
+@for $i from 1 to 6{
+.text-#{$i} {width:100%/6*$i;}
+}
+ex: here $i is variable declared for class1-6
+.text-#{$i}{width:100%/6*$i;} here the #combines the string with the class width:100%/6*i for each index .
+
+for $j from 1 to 6{
+.text-#{$j}{font-size:15px*$j;}
+}
+
+@each loop through a group once and takes the current value and moves to next
+takes in $key which is used as reference for defined key and value pair.
+
+div class="black-bg"
+div class="red-bg"
+div class="blue-bg"
+
+$colors:(color:black,color:red,color:blue);
+
+@each $key,$color in $colors{
+.#{$color}-bg{background-color:$color;}
+}
+
+
+@while loop as javascript we can create grid system using while loop at first we define varaible to use in condition and the property and the increment or decrement.
+the code will run untill the condition is met avoid infinte loop.
+
+
+$x:1;
+
+@while $x < 6{
+.text-#{$x}{font-size:15px * $x;}
+$x:$x+1;
+}
+
+
+@@@@d
+partials are group of css codes with similarities to keep organised
+this code are imported into another scss files
+partials start with  underscore 
+
+and imported to another scss file
+
+@import 'filename'
+
+it dont require underscore or file extension it will understand it is an partials
+
+the underscore will tell the compiler it is partial and dont need it convert to css file
+
+
+
+extend
+this helps to reuse css property already used using key word
+@extend .class;
+
+this helps with less repetitive codes.
+
+
+
+
+
+
+
+
+
+
+

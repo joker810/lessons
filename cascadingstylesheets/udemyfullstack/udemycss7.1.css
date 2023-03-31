@@ -1,0 +1,11 @@
+
+.rwd{
+    background-color: red;
+    height: 200px;
+}
+
+@media(max-width:700px){
+.rwd
+    {background-color:blue;}
+    
+}

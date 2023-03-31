@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table project</title>
+    <style>
+        table {
+            border:1px solid #ccc;
+            border-collapse: collapse;
+            vertical-align: center;
+            
+        }
+        table tr:hover{
+            background-color:blue;
+        }
+
+        table tr:hover td:hover{
+            background-color: #444;
+            border:1px solid #ccc;
+        }
+        td{
+            background-color: azure;
+        }
+        th{
+            text-decoration: underline;
+            background-color: bisque;
+        }
+        table tbody td{
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="font-size: larger ; font-weight: 900; ">Table project</h1>
+    <br><hr>
+
+    <table width="100%" >
+        <thead>
+            <tr>
+                <th>Sl no</th>
+                <th>Name</th>
+                <th>E-mail</th>
+                <th>Age</th>
+            </tr>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bheem</td>
+                <td>bheem@gmail.com</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ram</td>
+                <td>ram@gmail.com</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>shan</td>
+                <td>shan@gmail.com</td>
+                <td>23</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Slno</th>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Age</th>
+                </tr>
+            </tfoot>
+        </thead>
+    </table>
+
+    
+</body>
+</html>

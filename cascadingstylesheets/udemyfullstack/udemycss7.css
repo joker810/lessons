@@ -1,0 +1,144 @@
+
+/* .flex-parent{
+    display:flex;
+    border:1px solid black;
+    flex-direction: row-reverse;
+}
+
+.box1, .box2, .box3{
+    flex-basis: 33%;
+    border:1px solid red;
+    flex-shrink:0;
+    flex:0 0 33%;
+     grow shrink basis
+} */
+
+/* .box2{
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.box3{
+    flex-basis: 50%;
+} */
+
+/* flex box order  reordering the box*/
+
+/* .box1{order:3;}
+.box2{order:2;}
+.box3{order:1;} */
+
+/* flex basis */
+
+/* .row{
+    display:flex;
+    margin:10px;
+}
+.col{
+ border:1px solid red;
+ flex-basis:100%;
+}
+
+.col1{
+    flex-basis:50%;
+}
+
+.col2{
+    flex-basis:50%;
+    flex-shrink:1;
+}
+
+.col3{
+    flex-basis: 25%;
+    flex-grow:1; 
+} */
+
+/* .flexwrapp{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+.flexwrapc{
+    border:1px solid black;
+    flex-basis:75%;
+    flex-shrink:0;
+    flex-grow: 0;
+} */
+
+/* center align justify-content */
+
+/* .centeralign{
+    display:flex;
+    flex-direction: column;
+    width:100px;
+    height:100px;
+    background-color: brown;
+    margin: 50px auto 0;
+    color:aqua;
+    text-align: center;
+    justify-content: center;
+} */
+
+
+/* align items  inside another elements*/
+/* .align-items{
+    display:flex;
+    height:400px;
+    background-color: blue;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.col{
+    display: flex;
+    border:1px solid red;
+    flex-basis: 20%;
+    background-color: #bebebe;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height:150px;
+}
+
+.col1
+{height:100px;
+align-self: center;}
+.col2
+{height:300px;
+align-self: flex-end;}
+.col3
+{height:150px;
+align-self: flex-start;}
+.col4
+{height:auto;
+align-self:stretch;} */
+
+
+/* flex align with parent and child contents */
+
+.flexalign1{
+    display:flex;
+    background-color: blue;
+    height: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-evenly;
+    
+    
+}
+
+.box1{
+    background-color: brown;
+    flex-basis: 25%;
+    height:30px;
+    border:2px solid white;
+}
+
+
+
+
+
+
+

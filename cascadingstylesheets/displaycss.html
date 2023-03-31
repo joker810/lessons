@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* ::marker{
+        color:red;
+    }
+    .myimg{
+        width: 100px; 
+        padding: 0px;
+        opacity: 0.3;
+
+    }
+    .dis{
+        border: 2px solid black;
+        margin:0px;
+        padding:0px;
+    }
+    .core{
+        top:0px;
+        text-align: center;
+         display: block; 
+        padding: 0px;
+
+    }
+    .navigation{
+        font-size: large;
+        display:list-item;
+    }
+    p.block{
+        background-color: brown;
+        display:block;
+    }
+
+    p.none{
+        display: none;
+    }
+
+    p.inline{
+        background-color:brown;
+        display: inline;
+    }
+
+    p.list-item{
+        background-color: blue;
+        display:list-item;
+    }
+    p.inline-block{
+        display: inline-block;
+        width: 120px;
+    }
+
+    .cont{
+        display:contents;
+        background-color: red;
+        border: 1px solid grey;
+        padding: 10px;
+        width: 20px;
+    }
+
+    .contents{
+        padding:10px;
+        border: 1px solid grey;
+        background-color: lightblue;
+
+    }
+    .flex{
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-direction:row-reverse;
+        border: 2px solid black;
+    }
+    .flex div{
+        height: 50px;
+        width: 50px;
+    }
+
+    .flex1{
+        flex-direction:column-reverse;
+       
+    }
+
+    div.box-shadow{
+        border :2px solid black;
+        width: 200px;
+        padding :10px;
+        box-shadow: 30px 30px 30px 10px red inset;
+
+    }
+
+    p.grab{
+        cursor: grab;
+    } */
+
+
+    @-webkit-keyframes example{ /*  for web differnt browser */
+        from{top:-100px; opacity:0;}
+        to{bottom: 0px; opacity:1;}
+    }
+
+    @keyframes example{
+        from{top:-100px; opacity:0;}
+        to{bottom: 0px; opacity:1;}
+    }
+
+    div.model1{
+        display: none;
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    div.model1:target{
+        display: table;
+        position: absolute;
+    }
+
+    div.model-index{
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    div.container div.model-index{
+      margin: auto;  
+      background-color: white;
+      position: relative;
+      padding: 0px;
+      outline: 0px;
+      border: 1px blue solid;
+      text-align: justify;
+      width: 80%;
+      box-shadow: 0 4px 8px p rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+
+    -webkit-animation-name:example;
+    -webkit-animation-duration: 0.5s;
+
+    animation-name: example;
+    animation-duration: 0.5s;
+    }
+
+    .closebtn{
+        float: right;
+        font-size: bold;
+        text-decoration: none;
+        font-weight: bold;
+        color:white;
+
+    }
+
+    .closebtn:hover,.closebtn:focus{
+        color:black;
+        text-decoration: none;
+        cursor:pointer;
+    }
+
+    .body{
+        padding: 2px 16px;
+        background-color: white;
+        
+    }
+
+    header,footer{
+        background-color: lightgreen;
+        font-size: 20px;
+        color:white;
+
+    }
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <!-- <header class="dis">
+    
+        <nav class="navigation">
+            home
+            contact
+            help 
+        </nav>
+        
+        <div class="core">
+        <img class="myimg" src="/image/bird.jpg" alt="bird">
+        <h4>welcome to page</h4>
+        </div>
+</header>
+<hr>
+ <div class="display">
+
+        <h4 >this example <p class="block">hello world</p>for block item </h4><br>
+
+        <h4 >this  example <p class="none">hello world</p>for none elements </h4><br>
+
+        <h4 >this example <p class="inline">hello world</p> for inline items </h4>
+
+        <h4 >this  example <p class="list-item">hello world</p> for list-item </h4>
+
+        <h4 >this  example <p class="inline-block">hello world</p> for inline-block elements</h4>
+
+        <div class="cont">
+        this  example <p class="contents">hello world</p> for contents twice </div>
+
+        <div class="flex">
+            <div style="background-color: red;">a</div>
+            <div style="background-color: blue;">b</div>
+            <div style="background-color: green;">c</div>
+            <div style="background-color:yellow;">d</div>
+            <div style="background-color: orange;">e</div>
+            <div class="flex1">
+                <div style="background-color: red;">a</div>
+                <div style="background-color: blue;">b</div>
+                <div style="background-color: green;">c</div>
+                <div style="background-color:yellow;">d</div>
+                <div style="background-color: orange;">e</div>
+                </div>
+            </div><br>
+
+
+            <div class="box-shadow">this is the example for box box-shadow</div><br> <br>
+
+            <p class="grab">grab</p> <br> -->
+
+
+
+
+            <a href="#id01">
+                open model
+            </a>
+
+            <div id="id01" class="model1">
+            <div class="model-index">
+            <div class="container">
+                
+                <header class="container1">
+                    <a href="#" class="closebtn" >X</a>
+                    <h2>This is main</h2>
+                </header>
+
+                <div class="container1"><p>This is some teext</p>
+                <p>some text</p>
+                <p>some text</p>
+                </div>
+
+                <footer class="container1"> <p>The footer</p> </footer>
+
+                </div></div></div>
+
+                <br>
+
+
+
+
+            <div style="padding-bottom:100px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, animi! Fugit ad nesciunt in beatae, unde culpa, quae provident molestias, commodi est illo dolores. Enim tempore quod est similique ipsum vitae, laborum nam asperiores molestiae quos itaque, laboriosam, officiis voluptates? Quis ipsam eaque quibusdam fugit quae suscipit facilis autem alias! Deleniti sunt quibusdam odio unde dolores aspernatur recusandae natus cupiditate incidunt! Mollitia culpa qui ipsam, itaque exercitationem et modi, id veritatis in facilis pariatur perferendis labore quisquam odio aut. Laboriosam ratione necessitatibus facilis. Esse, eum? Voluptatem rerum harum obcaecati amet provident eius, natus a consectetur quasi laudantium cum unde saepe repudiandae accusantium excepturi illo corrupti illum placeat, quisquam sit minus repellat tempora consequatur. Iure repellendus facere voluptatem deleniti porro amet, dolore sint natus dolorum voluptatibus dignissimos! Fuga explicabo adipisci error harum ratione odio a maxime accusamus libero placeat natus amet soluta illo similique, dolorem asperiores eligendi, nam quasi. Eaque est qui blanditiis facilis aspernatur! Quisquam eum rerum, ipsa optio corporis labore unde quasi repellat molestiae ex nulla perspiciatis dolore hic, dolorum asperiores iusto similique, ut omnis culpa laborum eos assumenda illum repudiandae. Dolores, similique unde nulla, repellendus et recusandae tempora vel dolorem ipsum illum reiciendis officiis ullam possimus? Culpa ducimus repellendus inventore nisi porro, distinctio sapiente necessitatibus corrupti deleniti molestiae? Aliquid assumenda aperiam totam saepe libero, harum, excepturi quo perspiciatis in laboriosam, provident fugit suscipit necessitatibus minus! Dolore porro sequi hic iusto consequuntur corrupti dolorum doloremque molestiae aut magni numquam quasi vero, recusandae nobis rerum ducimus nihil consequatur suscipit, aliquid minus cum quo. Dignissimos quo aliquid fugit odio quibusdam enim, assumenda officia illum, dolores rerum facere veniam, veritatis nesciunt? Veritatis labore iusto pariatur. Beatae molestias nemo expedita sit numquam maiores repudiandae rem consequatur quae ad quidem cupiditate, rerum nam, aliquid quam unde saepe ab. Earum temporibus hic architecto omnis ullam.</div> <br>
+            
+
+            
+    
+
+ </div>
+
+</body>
+</html>

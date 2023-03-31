@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- <h1>.queryselectors alwasys select first element in the list</h1>
+            
+        
+        <p class="newclass">this the para <small>small element</small></p>
+
+        <a href="#">the link</a>
+
+        <ul>
+            <li>first </li>
+            <li>second </li>
+            <li>third</li>
+            <li>fourth</li>
+            <li>fifth</li>
+        </ul> -->
+    
+        <!-- Event listners <br>
+        <input type="text" class="cals" style="width:400px;padding:10px; border:2px solid #686868;">
+        <button type="button" onClick="funct()"style="background-color:#bebebe;">add this value</button>
+
+        <p>total value is :<span></span></p> -->
+
+        <!-- anonymous function
+            <input type="text"value="jeet" class="Anonymousf"> -->
+
+            <!-- adding event listners
+        <button class="js-click">click me</button>
+        <div id="Node"></div> -->
+
+            <!-- event listners on target value with keyup and keydown
+            <input type="text" class="values">
+            <span class="Nodes"></span> -->
+
+            <!-- event listners parameter
+            <button id="btn">click me</button>
+            <p id="demo"></p> -->
+
+            <!-- event listners thrid parameter
+            <div id="node">node
+                <p id="demo">demo</p>
+            </div>
+            <div id="node1">node1
+                <p id="demo1">demo1</p>
+            </div> -->
+
+            <!-- removing the added event listeners
+            <div id="add"style="background-color:#bebebe;height:80px;"><button onclick="removefunc()">remove click</button>
+            </div>
+            <p id="demo"></p> -->
+            
+
+
+
+
+        <!-- queryselector
+        <script>
+            var newclass=document.querySelector(".newclass")
+            // newclass.innerText=("new items")
+            var small=newclass.querySelector("small")
+            small.innerText=("new small")
+
+            var lis= document.querySelectorAll("li")
+
+            lis[0].innerText=("first line changed using index value")
+        </script> -->
+
+        <!-- event listners
+        <script>
+            var num=100;
+            
+
+            function funct()
+            {
+                var input=document.querySelector(".cals")
+                var value= Number(input.value)  
+                var total=value+num;
+    
+                var para=document.querySelector("p")
+                var span=para.querySelector('span')
+                span.innerText=(total)
+
+            }
+        </script> -->
+
+        <!-- anonymous function with iife
+        <script>
+            var getName= function(){
+                return document.querySelector(".Anonymousf").value
+            }   
+        </script> -->
+    
+        <!-- immediately invoked function expression
+     <script>
+         (function iifefunc()
+            {
+                console.log("my name is jet")
+            })();
+    </script> -->
+        
+        <!-- this keyword
+        <script>
+            function myName(name){
+                this.name=name;
+                this.profession="web d"
+                return name;
+            }
+            var MYname=myName("eren")
+        </script> -->
+
+        <!-- scope outside and inside
+        <script>
+            var globalAttr="global variable"
+            function doAthing()
+            {
+                console.log("!!!inside the function but declared outside"+globalAttr)
+                var localAttr="local attribute"
+            }
+
+            console.log("outside local ecosystem and declared inside func"+localAttr)
+        </script> -->
+
+        <!-- hositing
+        <script>
+            function Athing(name)
+            {
+                var name;
+                if(name === undefined){
+                    name="eren"
+                }
+                var name="meke"
+                console.log("athing",name) 
+            }
+        </script> -->
+
+        <!-- adding event listners
+        <script>
+            var totalClicks=0;
+            var ButtonClick=document.querySelector(".js-click")
+
+            function ClicksT(event){
+                totalClicks++;
+                document.getElementById("Node").innerText=totalClicks;
+
+            }
+            ButtonClick.addEventListener('click',ClicksT);
+        </script> -->
+
+        <!-- event listners target.value 
+        <script>
+            var valueS = document.querySelector(".values")
+            var Nodes = document.querySelector(".Nodes")
+
+            function clickKEY(event){
+                Nodes.innerText=event.target.value
+            }
+            valueS.addEventListener('keyup',clickKEY)
+        </script> -->
+
+        <!-- event listner parameters
+        <script>
+            function $(ID)
+            {
+                return document.getElementById(ID)
+            }
+            var Node1 = $("btn")
+            var Demo = $("demo")
+
+            function one(e){
+                Demo.innerText+=("clicked me")
+            }
+            function two(e){
+                Demo.innerText+=("mousedover me")
+            }
+            function three(e){
+                Demo.innerText+=("moused out me")
+            }
+            function four(e){
+                demo.innerText=(Math.random())
+            }
+            Node1.addEventListener('click' ,one);
+            Node1.addEventListener('mouseover' ,two);
+            Node1.addEventListener('mouseout' ,three);
+            window.addEventListener('resize',four)
+        </script> -->
+
+        <!-- addEventListener third parameter useCapture
+        <script>
+            document.getElementById("node").addEventListener('click',function(){alert("node")},false)
+            document.getElementById("demo").addEventListener('click',function(){alert("demo")},false)
+            document.getElementById("node1").addEventListener('click',function(){alert("node1")},true)
+            document.getElementById("demo1").addEventListener('click',function(){alert("demo1")},true)
+        </script> -->
+
+        <!-- removing the added event listeners
+        <script>
+
+            document.getElementById("add").addEventListener('mousemove' ,added1);
+
+            function added1(){
+                document.getElementById("demo").innerText=Math.random();
+            }
+            function removefunc(){
+                document.getElementById('add').removeEventListener('mousemove',added1)
+            } -->
+
+
+        </script>
+    </body>
+</html>

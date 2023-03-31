@@ -1,0 +1,351 @@
+body{
+    top:0;
+}
+.disblock{
+
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.inlinedis{
+    display: inline;
+    text-decoration: underline;
+    border:1px solid green;
+    font-size: 15px;
+}
+
+.disinline{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border :1px solid red;
+}
+
+.none{
+    display: none;
+}
+
+.heighttst{
+    display: inline-block;
+    width: 150px;
+    height:150px;
+    border:1px solid red;
+}
+
+/* positions */
+.position1{
+    display: inline-block;
+    border:1px solid red;
+    width:50px;
+    height: 50px;
+    position:relative;
+    background-color: blue;
+    left :50px;
+    bottom: 30px;
+}
+
+.relposition{
+    width:100%;
+    height:400px;
+    border :1px solid red;
+    position:relative;
+}
+
+.absposition{
+    border:1px solid red;
+    background-color: blue;
+    position:absolute;
+    width:50px;
+    height:50px;
+    top:calc( 50% - 50px);
+    left:50%;
+}
+
+.body1{
+    margin-top:30px;
+}
+
+.posfixed{
+    top:0px;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+    width:100%;
+    padding-top:0;
+    padding-bottom: 10px;
+    position:fixed;
+    background-color: white;
+}
+
+/* z-index for stack order */
+
+.reliabs{
+    border:1px solid red;
+    width:100%;
+    height:400px;
+    position:relative;
+    background-color:whitesmoke ;
+    z-index: 0;
+}
+
+.absindex{
+    border:1px solid blue;
+    display:inline-block;
+    height:50px;
+    width:50px;
+    position:absolute;
+   
+}
+
+.abs1ind{
+    background-color: yellow;
+    left:30px;
+    top:30px;
+    z-index: 1;
+    
+}
+
+.abs2ind{
+    background-color: green;
+
+}
+/* overflow*/
+
+.overflows{
+    border:1px solid red;
+    height:50px;
+    overflow:scroll;
+
+}
+
+.overflowauto{
+    border:1px solid red;
+    height:56px;
+    overflow:auto;
+}
+/* overflow hidden */
+.overflowhide{
+    border:1px solid red;
+    width:200%;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* float */
+
+.imgfloat{
+    heigth:150px;
+    width:150px;
+    float:left;
+    text-align: justify;
+    margin:20px;
+    
+
+}
+
+/* float clear */
+.float{
+    width :100px;
+    height:auto;
+
+}
+ 
+.left1{float:left;}
+.right1{float:right;}
+
+.clear1{
+    clear:both;
+}
+
+/* opacity see through */
+ .opacity1{
+    width:150px;
+    height:150px;
+    background-color: aquamarine;
+    border:2px solid black;
+    position:relative;
+    bottom:20px;
+    opacity:0.5;
+    /* z-index: -1;  */
+/* z-index to grab the text with stack order */
+ }
+
+ div.advancedattribute{
+    border:1px solid black;
+    font-weight:900;
+ 
+    /* exact attribute selectors */
+ }
+ form{ padding-left: 40%;
+    padding-bottom:20px;
+    
+ }
+ label,button {
+    display:block;
+ }
+
+ input[type]{
+    border:1px solid red;
+ }
+
+ button[type="submit"]{color:blue; width:30%;}
+
+ /* selecting with value of the attributes */
+ .fa-solid.fa-question[title~="steal"]{
+    border:1px solid red;
+ }
+
+ /* starts with selector with value s what it starts with and symbol^ */
+
+ [href^="/anything"]{
+    color:green;
+    margin: 15px 10px 10px 0px;
+    text-decoration: none;
+ }
+
+ /* ends with selectors using $ sign */
+ [href$=".pdf"]:hover{
+    color:red;
+    text-decoration: none;
+    font-style: bold;
+ }
+
+ /* psuedo selectors :hover */
+
+ [website^="website"]{
+    display:inline-block;
+    height:50px;
+    width:50px;
+    background-color: blue;
+    border:10px;
+ }
+
+ [website^="website"]:hover{
+    background-color: black;
+    border:10px solid yellow;
+ }
+
+ /* first child */
+
+ p.first-child-child1:first-child{
+    background-color: aqua;
+ }
+
+ /* last child' */
+
+ p.last-child-child1:last-child{
+    background-color:red;
+ }
+
+ /* :focus psuedo selectors */
+
+ .focus1{
+    border:1px solid black;
+    width:50%;
+    padding: 20px;
+    font-size: 20px;
+    opacity:0.3;
+ }
+ 
+ .focus1:focus{
+    opacity:1;
+ }
+
+ /*checkbox psuedo selectors */
+
+ label[for^=checkbox1]{
+    color: red;
+    display:inline-block;
+    border:1px solid black;
+    background-color: grey;
+ }
+
+ input[type="checkbox"].checkbox-psuedo:checked+label[for^=checkbox1] { 
+    color: green;
+}
+
+/* disabled psuedo selectors */
+
+.disabled-psuedo{
+    font-size: 30px;
+}
+
+input[disabled="disabled"].disabled1:disabled{
+    background-color: grey;
+    border:2px solid black;
+}
+
+/* enabled psuedo selectors */
+
+input[enabled="enabled"].enabled1:enabled{
+    background-color: yellow;
+    border:2px solid green;
+}
+
+/* not selectors */
+
+.colors{
+    font-weight:900;
+    font-size: larger;
+    
+}
+.red{
+    color:red;
+}
+.green{
+    color:green;
+}
+.blue{
+    color:blue;
+}
+
+.colors:not(.red):not(.blue){
+    border:4px solid black;
+}
+
+/* ::before psuedo element selectors */
+
+.before-pseudo-ele{
+    display:inline-block;
+    width:200px;
+    height: 200px;
+    background-color: #bebebe;
+    position:relative;
+    left:30%;
+    
+}
+
+.before-pseudo-ele::before {
+    display:inline-block;
+    width:200px;
+    height:200px;
+    content:'used the cotent property for before selector';
+    text-align: center;
+    background-color: #686868;
+    position:absolute;
+    left:-200px;  
+}
+
+/* after psuedo element selectors */
+
+.beforepsuedosele,a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+[href^='https']::after{
+    content: '(not secure)';
+    font-size: 10px;
+    color:red;
+
+}
+
+
+
+
+
+ 
+
+

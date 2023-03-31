@@ -1,0 +1,98 @@
+sql 
+it is structured query language
+this language is used as a data base which is an intermidiate between front end and server side. 
+
+syntax
+SELECT * FROM cusmtom table
+
+here select is keyword to select and * asterisk is the point to select everything, from keyword a custom table
+
+php syntax:
+mysqli_query($link,"SELECT * FROM customtable");
+
+
+$connect=mysqli_connect($host,$username,$password,$database);
+
+if(!con){
+//we cant connect to database
+
+$msg="the error is",mysqli_connect_error();
+die($msg)
+}
+//this kills the msg if the database open.
+
+echo mysqli_get_host_info($con);
+mysqli_close($con);
+
+
+inserting the data into sql
+
+with php and sql
+
+INSERT INTO databasetablename(key,key2,key3)VALUES('values','values2','values3')
+
+php syntax
+
+mysqli_query($con(database), "INSERT INTO tablename(key,key2,key3)VALUES('values','values2','values3')")or die (mysqli_error($con));
+
+
+
+cleaning forward slashes or malisous data.when sql injection is done which is injecting sql code into server.backword slashes.
+clean=\=\\\
+strip=\\\=\
+ must have a connection with database.
+mysqli_real_escape_string($con,$text)
+
+stripslashes($text);
+
+
+///to get data from the sql through we need
+
+connection
+$con=mysqli_connect($host,$username,$pass,$database);
+
+then the sqli query SELECT
+
+$ele=mysqli_query($con,"SELECT * FROM database");
+
+to display the contents we use array fetch 
+
+while($var=mysqli_fetch_array($ele)){
+	echo $var['column name'];
+}
+
+this fetch array can be used without while loop.
+
+WHERE keyword is used to target specific value proper quotes must be used.
+
+$var=mysqli_query($con,"SELECT * FROM users WHERE specific_column_name='1'");
+
+$ele=mysqli_fetch_array($var);
+echo $ele['value'];
+
+AND="value"; //must be true. 
+
+OR="value"; // value either one must be true.only includes one.
+
+
+LIMIT theintiger(1-9)
+
+ORDER BY VALUE Decs // order of value in descending order.
+ORDER BY VALUE Asc // order of value in ascending value.
+
+
+
+updating a sql table with WHERE keyword
+
+$table=mysqli_query($connection,"SELECT * FROM users WHERE firstname="value" AND UID='value'");
+
+$update=mysqli_query($con,"UPDATE tablename SET firstname='newvalue' WHERE UID='value' ");
+
+
+to delete a element in in sql we use DELETE keyword and WHERE clause is important.
+
+DELETE FROM users WHERE name='value';
+
+
+
+

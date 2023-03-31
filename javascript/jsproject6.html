@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listeners project</title>
+</head>
+<style>
+.divElement{
+    padding:20px;
+    height:50px;
+    font-size: 30px;
+}
+input{
+    width:50%;
+    height:30px;
+    
+}
+</style>
+<body>
+    <h2>event  listeners project</h2>
+    <div class="divElement">
+    <label for="back-input">backgroundcolor</label>
+    <input type="text"id="back-input">
+    </div>
+
+    <div class="divElement">
+        <label for="text-input">text color</label>
+        <input type="text"id="text-input">
+        </div>
+
+        <div class="divElement">
+            <label for="fontsize-input">fontsize</label>
+            <input type="text"id="fontsize-input">
+            </div>
+
+
+
+            <script>
+                var Bgcolor=document.getElementById("back-input")
+                var textColor=document.getElementById("text-input")
+                var fontSize=document.getElementById("fontsize-input")
+                
+
+                Bgcolor.addEventListener('keyup',function(event){
+                    Bgcolor.style.backgroundColor=event.target.value
+                })
+
+                textColor.addEventListener('keyup',function(event){
+                    textColor.style.color=event.target.value
+                })
+
+                fontSize.addEventListener('keyup',function(event){
+                    fontSize.style.fontSize=event.target.value+'px'
+                })
+
+            </script>
+</body>
+</html>

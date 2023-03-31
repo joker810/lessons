@@ -1,0 +1,135 @@
+
+@keyframes newanime
+{
+    0%{width:0%; background-color:#ccffcc;}
+    25%{width:25%; background-color:#99ff99;}
+    50%{width:50%;background-color:#4dff4d;}
+    75%{width:75%;background-color:#1aff1a;}
+    100%{width:100%;background-color:#00e600;}
+}
+
+
+.animation1{
+    height:30px;
+    width:10px;
+    overflow:hidden;
+    text-align :center;
+    font-size:30px;
+    border:3px solid green;
+    background-color:#e6ffe6;
+    animation-name:newanime;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blinkanime
+{
+    0%{opacity:1;}
+    50%{opacity:0;}
+    100%{opacity:1;}
+}
+
+
+.animationblink{
+    height:100px;
+    width:150px;
+    text-align :center;
+    font-weight:700;
+    border:3px solid green;
+    background-color:#e6ffe6;
+    animation-name:blinkanime;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    /* animation-fill-mode: forwards; */
+}
+/* iteration count how many times the animation must run */
+.count1{
+    animation-iteration-count: 1; 
+}
+
+.countinfinte{
+    animation-iteration-count: infinite;
+}
+
+/* animation direction */
+
+@keyframes animedirection {
+    0%{background-color: green;}
+    50%{background-color: blue;}
+    100%{background-color: red;}
+}
+
+.animedirection
+{
+    width:100px;
+    height:100px;
+    border:2px solid green;
+    overflow: auto;
+    background-color: whitesmoke;
+    animation-name: animedirection;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+
+
+/* animation timing function */
+
+@keyframes animetf {
+    0%{margin-left:0;}
+    100%{margin-left:50px;}
+    
+}
+.animationtf{
+    height:100px;
+    width:100px;
+    margin: 0 auto;
+    background-color: grey;
+    animation-name: animetf;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: ease;
+}
+
+/* columns */
+#cols{
+    columns: 2;
+}
+/* textarea controlled body with resize  */
+
+.textarea1{
+    border:2px solid red;
+    width:100px;
+    height:100px;
+    font-size:30px;
+}
+
+.textarea2{
+    resize: none;
+    width:100px;
+    height:10px;
+}
+
+/* border -sizing */
+
+.box1, .box2{
+    border:1px solid black;
+    margin-bottom:30px;
+    width:300px;
+}
+
+.box1{
+    box-sizing:content-box;
+    padding:20px;
+}
+
+.box2{
+    box-sizing:border-box;
+    padding:20px;
+}
+
+
+
+

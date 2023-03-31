@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3 id="sentence">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut illum fugiat a aspernatur reprehenderit molestias debitis! Corrupti voluptas perspiciatis sit necessitatibus est nisi voluptatem omnis nobis, placeat reprehenderit assumenda similique?</h3>
+    
+
+
+    <script>
+        var sentencenode = document.getElementById("sentence");
+        var sentence = sentencenode.innerText;
+
+        var uppercase = sentence.toUpperCase()
+        var lowercase = sentence.toLowerCase()
+        var firstten = sentence.substr(2,20)
+        var wordssplit = sentence.split(" ")
+        var joinwords = "("+ wordssplit.join(")(") + ")";
+
+        var sliced = sentence.slice(0,20)
+        var sliced = sentence.replace("Lorem","karem")
+// //i for ignore case insensitivity //g for global match
+
+        // remove white spaces
+        var trim = sentence.trim()
+        var trim = sentence.trimStart()
+        var trim = sentence.trimEnd()
+
+        // padstart and padend
+
+        var paddingstart= sentence.padStart(4,0)
+        var paddingend= sentence.padEnd(4,0)
+
+        text=9;
+        text.toString(8);
+        // convert to string using radix base to.
+
+
+        // extracting code
+        // charAt  for index value of string .and charCodeAt for uni code
+
+
+
+       
+
+       
+
+        
+
+    </script>
+</body>
+</html>

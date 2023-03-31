@@ -1,0 +1,222 @@
+p:empty{
+    width:300px;
+    height:30px;
+    background :red;
+    }
+
+p:first-of-type{
+    background-color: red;
+}
+
+/* input{
+    width:100px;
+    -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+    }
+input:focus{
+    width:250px;
+    background-color: yellow;
+} */
+
+.range input[type=number]:in-range
+{
+    border: 2px solid seagreen ;
+}
+.range input[type=number]:out-of-range{
+    border: 2px solid red;
+}
+/* valid and invalid selectors */
+input:invalid{
+    border:2px solid red;
+}
+input:valid{
+    border:2px solid green;
+    color:green;
+}
+
+/* lang selectors */
+p:lang(it){
+    color:yellow;
+}
+/* last-child selectors */
+p:last-child{
+    background-color: aqua;
+    }
+/* last-of-type */
+p:last-of-type{
+    background-color: blueviolet;
+}
+/* Not selectors */
+.new {color:yellow;}
+:not(.new ){
+    color:yellowgreen;
+}
+/* nth child selectors matches the specified no from its parent element it can be keyword (odd and even ) number or formula(a+b) */
+div.nthchild :nth-child(even)
+{
+    color:black;
+}
+
+div.nthchild :nth-child(3n-0)
+{
+    color:red;
+}
+
+/* nth-last-child matches its nth element regardless of its parent and type counting from last used for numbers and keyword like odd and even and formula 3n-0 etc*/
+
+div.nthlastchild.p:nth-last-child(2){
+    background-color: red;
+}
+
+/* nth-last-of-type is selector used to matches nth specifies of particular type, of same parent and counting from the end */
+
+p:nth-last-of-type(2){
+    color:red;
+}
+
+/* nth-of-type matches every nth elements of same type and parent */
+div:nth-of-type(2){
+    color:blue;
+}
+li:nth-of-type(2){
+    color:blue;
+}
+:nth-of-type(3){
+    color:aqua;
+}
+
+/* only-of-type applies for if its only child of its type and parent
+ */
+ p:only-of-type{
+    color: aqua;
+ }
+
+ /* only-child matches every elements that is only child of its parent */
+
+ p:only-child{
+    color:sienna;
+ }
+
+ /* optional selectors used with required attribute in normaly form elements */
+ input:optional{
+    background-color:yellow;
+    }
+
+    /* required tag is used in form element with input,txtarea type ,required attribute */
+
+    input:required{
+        background-color:green;
+    }
+
+    /* readonly selectors */
+    input:read-only{
+        color:red;
+        }
+
+    /* read-write applies for tag with no readonly and disabled attribute */
+
+    input:read-write{
+        color:black;
+        }
+
+        /* root selectors for whole root html elements */
+
+        :root{
+           background-color: #00ff00;
+        }
+
+        /* positions */
+        div.parent1{
+            position:static;
+            border:solid red 1px;
+            }
+            div.child1{
+            position:absoulte;
+            border:solid red 1px;
+            left:7px;
+            }
+            
+            div.parent2{
+            position:relative;
+            border:solid red 1px;
+            left:-15px;
+            }
+            div.child2{
+            position:absoulte;
+            border:solid red 1px;
+            left:70px;
+            }
+            
+            div.parent3{
+            position:sticky;
+            position: -webkit-sticky;
+            border: 5px;
+            top:0;
+            }
+            div.child3{
+            position:absoulte;
+            border:solid red 1px;
+            right:70px;
+            }
+            
+            div.parent4{
+            position:fixed;
+            border:solid red 1px;
+            left:1;
+            right:0;
+            bottom:0;
+            }
+            div.child4{
+            position:absoulte;
+            border:solid red 1px;
+            }
+
+            /* keyframes */
+            div.keyframes{
+                background-color: red;
+                height: 50px;
+                width: 50px;
+                position: relative;
+                animation: mymove 5s infinite;
+            }
+
+            @keyframes mymove{
+            0%{top:0px;}
+            25%{top:50px; background:green;}
+            50%{top:100px; width: 75px; background: yellow;}
+            75%{top:150px;  background:aqua ;}
+            100%{top:200px;width: 100px;background-color: beige;}
+            
+
+            }
+
+        div.opacity{
+            background-color: aqua;
+            opacity:0.5;
+        }
+
+        /* overflow */
+        #overflowex{
+            height:200px;
+            width:200px;
+            color: black;
+            padding:15px;
+            overflow: visible;
+            border :2px solid black
+        }
+
+
+/* :target selectors  */
+        :target{
+            border: 2pxsolid grey;
+            background-color: aqua;
+        }
+
+    /* target example 2 */
+    .tab div{
+        display:none;
+    }
+
+    .tab div:target{
+        display:block;
+    }

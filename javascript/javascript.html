@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+
+    <h1 id="test">Hello world</h1>
+    <p id="new">new elements</p>
+    <button onclick='document.getElementById("new").style.display="none" '>click me</button>
+
+    <div>
+        <button onclick="document.getElementById('day-night').src='/image/day.jpg'">day</button>
+        <img  id="day-night"src="/image/day.jpg" width="200px"alt="" >
+        <button onclick="document.getElementById('day-night').src='/image/night.jpg'">night</button>
+    </div>
+
+
+
+
+    <script>
+        var name=("joker");
+        var var1="hello";
+
+        var age=23;
+        age=30;
+
+
+        // alert(age);
+        </script>
+
+        <script>
+            // variable concatination merging
+            var age1=4;
+            var age2=5;
+
+            var name1="angie";
+            var name2="lego";
+
+            var sentence="I have two pet their names are "+name1+" and "+name2;
+            
+            sentence=sentence +". they are "+age1+" and "+age2+" years old";
+
+            var myage=age1+","+age2+"";
+            var profession="jobless";
+            console.log("name:",name,profession);
+            console.error("error");
+            console.warn("warning");
+
+
+            // get getElementById
+            // var test="new html world"
+            // document.getElementById("test").innerHTML=test;
+
+           var owner= document.getElementById('test');
+            var oldtext=owner.innerHTML;
+            // old text is used acess in console or to store older text or data
+
+            owner.innerHTML="hello worldo"
+
+            
+
+        
+
+           
+
+
+    
+
+        </script>
+</body>
+</html>

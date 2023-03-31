@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects and loops</title>
+</head>
+<body>
+    <ul>
+        <li class="js-list">item 1</li>
+        <li class="js-list">item 2</li>
+        <li class="js-list">item 3</li>
+        <li class="js-list">item 4</li>
+        <li class="js-list">item 5</li>
+        <li class="js-list">item 6</li>
+    </ul>
+    
+
+
+    <!-- <script>
+        var obj= {
+        'name':'eren',
+        'age':3,
+        'method':function(){
+            console.log('hello ' +this.name)
+        }
+    }
+
+    console.log(obj.name)
+    console.log(obj['age'])
+    console.log(obj.method())
+     //accessing with dotnotation and bracket notation.8
+    // this keyword is normally used in objects which means this object . dont declare string,number ,boolean in objects which complicate and slows the code down
+    </script> -->
+
+
+
+    <!-- <script>
+        var car = ["volve","benz", "mercedes","bmw"]
+        for(i=0;i<car.length;i++){
+            var cars = car[i].toUpperCase()
+            console.log(cars) 
+            if(i==3)
+            {
+                break;
+            }
+        }
+    </script> -->
+
+
+    <!-- <script>
+        var Num = Number(prompt("enter the number:"))
+        var startingNum = 0;
+        while(Num>=startingNum)
+        {
+            console.log(startingNum)
+            startingNum++
+        }
+    </script> -->
+
+    <script>
+        // var names=["erem","zeke","levi","jean","conny","sasha"]
+        var htmls = document.querySelectorAll(".js-list")
+        htmls.forEach(function(name,index)
+        {
+            if(index>=3)
+            {
+                name.remove()
+                return false;
+            }
+            name.innerText=index*2+" index multiplied by 2 ";
+        })
+    </script>
+</body>
+</html>

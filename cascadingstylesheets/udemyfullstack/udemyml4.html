@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>udemy css 2</title>
+    <link rel="stylesheet" href="/cascadingstylesheets/udemyfullstack/udemycss2.css">
+</head>
+<body>
+    <nav class="navi"><h1>css learning</h1></nav>
+
+    <a href="https://www.google.com" class="link1">click for google</a> <br><hr>
+
+    <div class="group1">this is first</div>
+    <p class="group2">this is second</p>
+    <span class="group3">this is third</span> <hr>
+    
+    <div id="descended"><p style="font-weight: 900;">Decendent selector and specificity</p>
+        <div>
+            <p>
+                this is some text for <span>this span one</span>
+                <span>this is span two</span>
+            </p>
+            <span>the span three<span></span>span foure</span>
+            <div>
+                <p>some p two
+                <span>span five</span>
+            </p></div>
+        </div>
+        <span class="spaner">this five</span>
+    </div> <br><hr>
+<!-- child selectors -->
+    <div id="child" ><p style="font-weight: 900;">Child selectors</p>
+        <div>
+            <p>this is one</p>
+            <p>this is two</p>
+            <p>this is three</p>
+        </div>
+        <div><p>this three.1</p></div>
+        <p>this is four</p>
+        <section><div>this first div<p class="pchild">this six</p></div></section>
+    </div> <br> <hr>
+
+    <!-- adjacent selectors -->
+     <!-- <div class="adjacent"><p style="font-weight:900;">Adjacent selectors</p> -->
+    <form action="">
+     <label for="">first name</label>
+     <input type="text">
+     <input type="text">
+    
+    </form></div>
+
+    <div class="listtype"><p class="listt" style="font-weight:900;">List style type and position inside</p>
+    <ol class="listin">
+        <li>list 1 </li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ol>
+    </div>
+    <p class="listout" style="font-weight:900;">List position outside</p>
+    <ol class="listout">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+    </ol> <br><hr>
+
+    <!-- tables -->
+    <p style="font-weight: 900;">Tables</p>
+    <table border="1"cellspacing="5" cellpadding="4" width="100%" >
+        <tr>
+            <td>one</td>
+            <td>two</td>
+            <td>three</td>
+        </tr>
+    </table><br> <hr>
+
+    <table border="1" style="border-collapse: collapse;" width="100%" >
+        <tr>
+            <td><p>one</p>
+                <p>two</p>
+                <p>three</p>
+                <p>four</p>
+                <p>five</p>
+            </td>
+            <td style="vertical-align:center;">align me!</td>
+    </table> <br> <hr>
+<!-- using table hover selector -->
+        <p style="font-weight:900;">Table with hover selector</p>
+        <table class="tablehover" width="100%">
+        <tr>
+            <td>row1 column1</td>
+            <td>row1 column2 </td>
+            <td>row1 column 3</td>
+        </tr>
+        <tr>
+            <td>row2 column1</td>
+            <td>row2 column2</td>
+            <td>row2 column3</td>
+        </tr>
+        <tr>
+            <td>row3 column1</td>
+            <td>row3 column2</td>
+            <td>row3 column3</td>
+        </tr>
+        </table>
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+jQuery 
+
+it is a javascript library to traverse and manipulate HTML DOM . css styles and ajax.
+
+
+<script>
+$(document).ready(
+function(){
+});
+</script>
+
+rendering java script before rendering HTML will cause bugs so use 
+$(document).ready(function(){});
+
+the function will run as soon as page is loaded.
+
+jquery selects html element through selector and does something to it.
+like events.
+
+jquery starts with $.
+
+$("button").addClass("animated bounce");
+
+here button is element and using animate.css we add class to the element. jquery addClass() function.
+
+$(.class).addClass("animated shake");
+example:to select the class of element: $(".well").addClass("animate shake")
+
+
+$(#id).addClass("animated fadeOut");
+ex:for id
+$("#targetid").addClass("animated fadeOut");
+
+
+
+$$$$
+adding different class into single element using different method.
+$("button").addClass("animated");
+        $(".btn").addClass("shake");
+        $("#target1").addClass("btn-primary");
+
+we can also remove a class from html element using jquery.
+
+$("selector").removeClass("class");
+
+
+we can also add css to html using jquery.
+using function css("key","value");
+
+
+$(selector).css("key","value")
+
+example: $("#taget1").css("color","red");
+
+
+using property function we can also manipulte non css property of HTML elements. prop();
+
+$("selector").prop("disabled",true);
+
+
+
+to manipulate entire html tag we use html() function
+here the earlier element will be replaced with new
+
+ex : $("h1").html("<em>hi</em>");
+
+and 
+text() function replace only the text inside the html tag.
+
+ex: $("h1").text("new text");
+
+
+@@
+remove()
+method is used to remove html element 
+
+$("h1").remove();
+
+
+@@
+appendTo();
+this function allows element to move to another.
+
+$(movingelement).appendTo("spotto be moved");
+
+ex:
+$("#target2).appendTo("#right-well");
+
+
+@@clone()
+
+clone() function is used to make clone of a element
+
+chaining is using two functions together
+
+
+$("target").clone().appendTo("position");
+ here the target get copied and moved to the position without get removed from initial place.
+
+$("#target2").clone().append("#left-well");
+
+
+@
+
+Every html element has parent element 
+parent() this function selects the parent element of the specified tag.
+
+$("specifiedtag").parent().css("background-color","red");
+
+
+@
+children()
+every html tag has child elements this fucntion selects the childs of specified tags.
+
+$("ol").children().css("color","red");
+
+@@
+
+.target:nth-child(2);
+this method is used to select the specific child element in a group.
+
+target may be a class or element.
+
+$(".target:nth-child(2)").addClass("animated bounce");
+
+
+@@@
+ we can also select .target:even and odd.
+jquery is index based.
+
+$(".target:odd").addClass("animated shake");
+
+
+@@
+we can also target body element of html
+
+$("body").addClass("animate__bounceOutDown")

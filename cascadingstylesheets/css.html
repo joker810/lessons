@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascading style sheets</title>
+    <link rel="stylesheet" href="/chapter1.css">
+    <style> -->
+    #first
+    {
+        background-color: purple;
+    }
+    .red{
+        background-color: aqua;
+        color: white;
+    }
+    body{
+        background-color:	#00ff00;
+    }
+    h1{color:white;
+        text-align:center;
+    }
+    p{
+        font-family: verdana;
+        font-size: 15px;
+    }
+    div.bag,p.bag
+    {
+        color: black;
+        border: 3px solid black;
+    }
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    div.types > p
+    {
+        color:yellow;
+        font-size: 40px;
+    }
+    div.lake + p {
+        background-color: aqua;
+    }
+
+    </style>
+</head>
+<body>
+<h1>This is css chapter 1</h1>
+<p>lets begin with the class</p>
+    <div class="container"> 
+<div id="first">first</div>
+<div id="second" style=background-color:blue;>second</div>
+<section class="red">red </section>
+
+<div class="bag">
+    <h1>This is a selector</h1>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus sapiente explicabo possimus aliquid necessitatibus, asperiores recusandae, accusamus nesciunt quasi modi iste sint est doloremque assumenda. Adipisci maxime sint earum hic.
+    <p>this is an example</p>
+    <h1>second selector</h1>
+</div>
+<div class="bag">Lorem, ipsum.</div>
+
+<div class="types">
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <section><p>Lorem ipsum dolor sit amet consectetur.</p></section>
+    <p>Lorem ipsum dolor sit.</p>
+</div>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<div class="lake">
+    <p>lorem5</p>
+    <p>lorem5</p>
+    </div>
+    <p>lorem2</p>
+    <p>lorem2</p>
+    
+    <div class="lake">
+    <p>lorem3</p>
+    </div>
+    <p>lorem3<p>
+    <p>lorem3</p>
+
+    <div class="nake">
+        <p>lorem2</p>
+        <p>Lorem, ipsum.</p>
+        </div>
+        <p>Lorem, ipsum.</p>
+        <code>this is a code</code>
+        <p>Lorem, ipsum.</p>
+
+        <div><p><b><a class="classhighlight" href="https://www.google.com" target="_blank">This link </a></b></p></div><br>
+
+
+        <div class="classhighlight"><a href="https://www.google.com" target="_blank">LINK</a></div><br>
+
+        <div class="ex1">this a new example for tooltip <p class="exe1"> HELLO WORLD</p></div><br><br>
+
+<!-- first-child psuedo class -->
+        <section>
+        <p class="exe2">this is first</p>
+        <p class="exe2"> This is second</p>
+        <div>
+        <p class="exe2">this is thrid</p>
+        <p class="exe2">this is forth</p>
+        </div>
+        </section><br>
+
+        <!-- first child for i and p -->
+        <section>
+        <p class="exe3">this is example for <i class="exe3">strong</i> p and i elements <i class="exe3">strong</i> </p>
+        <p class="exe3">this is example for <i class="exe3">strong</i> p and i elements <i class="exe3">strong</i> </p></section><br>
+
+        <!-- this i and p for first-child psuedo class -->
+        <section>
+            <p class="exe4">this is another <i class="exe4">strong</i> example<i class="exe4"> strong </i></p>
+            <p class="exe4">this is another <i class="exe4">strong</i> example <i class="exe4">strong</i></p>
+            <div>
+            <p class="exe4">this is another <i class="exe4">strong</i> example <i class="exe4">strong</i></p>
+            <p class="exe4">this is another <i class="exe4">strong</i> example <i class="exe4">strong</i></p>
+            </div></section><br>
+
+            <section>
+                <p>this is a <q class="exe5" lang="no">quots of nation</q>ok.</p>
+            </section><br>
+
+            <section>
+                <h1 class="e1">this is the content</h1>
+                <p class="e1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo omnis enim tempora atque cumque harum pariatur alias? Inventore, sint hic?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, autem?</p>
+            </section><br>
+
+                <ul>
+                <li>cofee</li>
+                <li>tea</li>
+                <li>malt</li>
+                </ul>
+
+                <ol>
+                <li>tiger</li>
+                <li>cat</li>
+                <li>lion</li>
+                </ol>
+            <br>
+
+
+    
+
+</body>
+</html>

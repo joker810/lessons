@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip calculator project</title>
+</head>
+<style>
+    .container{
+        text-transform: uppercase;
+        padding:10px;
+        
+        }
+        input,label{
+           display: block;
+           margin:10px;
+           font-family: 'Courier New', Courier, monospace;
+           font-weight:700;
+        }
+
+</style>
+<body>
+<div class="container">
+    <h1>tip calculator</h1>
+    <label for="bill-amount">bill amount:</label>
+    <input type="number" id="bill-amount">
+    <label for="tip-amount">tip amount(in %):</label>
+    <input type="number" id="tip-amount"> 
+    <button type="button" onclick="TotalAmount();">
+       Total amount with tip amount
+    </button>  <br>
+    <div class="TIP"></div>
+    <div class="T-T"></div>
+</div>
+    
+
+<script>
+    function TotalAmount() 
+    {
+        var billAmount=Number(document.getElementById("bill-amount").value);
+        var tipAmount= document.getElementById("tip-amount")
+            tipAmount=Number(tipAmount.value);
+            console.log(billAmount,tipAmount)
+
+        tipAmount= tipAmount/100;
+        var totaltip=billAmount*tipAmount;
+        console.log(totaltip)
+        document.querySelector(".TIP").innerHTML="Tip amount is:"+totaltip
+        var totbill=billAmount+totaltip;
+        console.log(totbill)
+        document.querySelector(".T-T").innerHTML="<h3>The total bill with tip:rs "+totbill.toFixed(2);"</h3>"
+        return(totaltip,totbill.toFixed(2))
+    }
+</script>
+</body>
+</html>

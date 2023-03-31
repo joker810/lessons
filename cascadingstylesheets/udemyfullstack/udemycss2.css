@@ -1,0 +1,122 @@
+.navi{
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-family: cursive,'shrikhand';
+}
+
+
+
+.link1{
+    color:blueviolet;
+    text-decoration: none;
+}
+
+/* hover is psuedo selectors when we move cursor over link we can use hover to style it */
+
+.link1:hover{
+    font-size: larger;
+}
+
+/* visited */
+.link1:visited{
+    color:blue;
+}
+
+/* active selector  is used when a user click and hold on to a link*/
+
+.link1:active{
+    color:red;
+}
+
+/* grouping the selectors */
+.group1,
+.group2,
+.group3{
+    color:#ff9999;
+}
+
+/* descendent elements seperated by space and specificity */
+
+#descended div p span{
+    color:red;
+}
+/* naming specific or specificity is really important */
+#descended  .spaner{ 
+    color:blue;
+}
+
+/* child selector > */
+
+#child div > p{
+    color:purple;
+}
+#child div > p.pchild{
+    color:blue;
+}
+
+#child > section > div{
+    color:aqua;
+}
+
+/* adjacent selectors */
+label+input {
+    border:1px solid red;
+}
+
+/* list  style type  */
+
+.listin{
+    list-style: disc;
+    padding-left:0;
+    margin:0;
+    list-style-position: inside;
+}
+
+li{
+    border:1px solid #000;
+    width: 100px;   
+}
+
+.listout{
+    list-style-position:outside;
+    list-style: disc;
+    padding-left: 50px;
+    list-style-image: url('/listimages/icons8-discord-bubble.svg')
+}
+
+.listout::marker{
+    width:2px;
+    height:2px;
+}
+
+/* tables */
+
+table{
+    border:5px solid red;
+    border-collapse:collapse;
+}
+
+table td{
+    border:2px solid black;
+}
+
+.tablehover {
+    border-collapse: collapse;
+    border-style: none;
+}
+
+.tablehover tr:hover{
+    background-color:#ccc;
+}
+.tablehover tr:hover td:hover{
+    background-color: azure;
+}
+
+
+
+
+
+
+

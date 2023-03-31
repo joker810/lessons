@@ -1,0 +1,115 @@
+#first
+    {
+        background-color: purple;
+    }
+    .red{
+        background-color: aqua;
+        color: white;
+    }
+    body{
+        background-color:	#00ff00;
+    }
+    h1{color:white;
+        text-align:center;
+    }
+    p{
+        font-family: verdana;
+        font-size: 30px;
+    }
+    div.nake ~ p {
+        background-color: aqua;
+    }
+    a:link
+{
+color:blue;
+}
+a:visited
+{
+color:yellow;
+}
+a.classhighlight:hover
+{
+color:pink;
+font-size: 30px;
+}
+a:active
+{
+color:green;
+}
+
+div.classhighlight
+{
+background-color:red;
+text-align: center;
+padding: 30px;
+}
+div.classhighlight:hover
+{
+    background-color: blue;
+    color: pink;
+    font-size: 30px;
+} */
+/*hover tooltip div and p element  */
+.exe1
+{
+display:none;
+background-color:blue;
+padding: 20px;
+}
+.ex1:hover .exe1
+{
+display:block;
+text-align: center;
+}
+
+/* first-child psuedo class*/
+ p.exe2:first-child
+{
+color : blue;
+}  
+
+/* first-child for i in all p elements */
+ p.exe3 i.exe3:first-child
+{
+    color: blue;
+} 
+
+/* i and p in first-child for every elements */
+p.exe4:first-child i.exe4
+{
+    color: blue;
+} 
+
+/* "lang psuedo class */
+ q.exe5:lang(no){
+    quotes:"@" "@";
+} 
+
+/* psuedo elements first-line */
+ p.e1::first-line{
+    color: aqua;
+    font-variant: small-caps;
+}
+
+/* psuedo element first letter */
+ p.e1::first-line{
+    color:red;
+    font-size:xx-large;
+}
+
+/* ::before psuedo element */
+h1.e1::before{
+    content:url(/image/techs.jp)
+}
+
+/* ::after psuedo elements */
+h1.e1::after{
+    content:url(etc)
+}
+
+/* marker element is used to style the marker of the list */
+li::marker {
+    display:initial;
+    color:red;
+    font: size 1.5em;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript project</title>
+</head>
+<style>
+    .letter{
+        font-size: 90px;
+        text-align: center;
+        font-family:'Courier New', Courier, monospace;
+        display:inline-block;
+        transition: all 250ms ease-in-out;
+
+    }
+    .letter.active{
+        transform:scale(1.5) rotate(20deg);
+        color:green;
+    }
+
+</style>
+<body>
+    <h1>Final Project</h1>
+    
+
+
+    <script>
+        var h1=document.querySelector("h1")
+        var letters=h1.innerText.split('')
+        var html=""
+
+        letters.forEach(letter => {
+            let classes=''
+            if(letter!==' '){
+                classes='letter js-letter'
+            }
+            html=html+`<span class="${classes}">${letter}</span>`
+        });
+        h1.innerHTML=html
+
+        var jsLetters=document.querySelectorAll(".js-letter")
+        jsLetters.forEach(node => {
+            node.addEventListener('mouseover',function(event){
+                
+                this.classList.add("active")
+            })
+            node.addEventListener('mouseout',function(event){
+                
+                this.classList.remove("active")
+            })
+        });
+
+        
+    </script>
+</body>
+</html>

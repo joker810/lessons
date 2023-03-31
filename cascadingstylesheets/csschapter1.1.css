@@ -1,0 +1,42 @@
+/* marker element is used to style the marker of the list */
+li::marker {
+    color:red;
+    font-size : 1.5em;
+}
+
+::selection{
+    color:blue;
+    background-color: yellow;
+}
+
+input:checked{
+    color:red;
+    box-shadow: 0 0 0 3px orange;
+    height:20px;
+    width:20px;
+}
+input:checked+label{
+    color:red;
+}
+option:checked{
+    box-shadow: 0 0 0 3px orange;
+}
+
+input[type="text"]:disabled
+    {
+    background-color:yellow;
+    }
+input:enabled{
+    background-color: green;
+}
+
+option:disabled{
+    background-color:red;
+    }
+
+p.empty1:empty{
+    width:300px;
+    height:30px;
+    background :red;
+    }
+

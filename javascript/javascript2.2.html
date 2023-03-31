@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Changing css with event listeners</h1>
+
+    <div>
+        <label for="" class="back-label">background colors</label>
+        <input type="text" class="js-back-color" style="padding:10px; font-size:20px;">
+    </div>
+
+    <div>
+        <label for="" class="text-label">text colors</label>
+        <input type="text" class="js-text-color" style="padding:10px; font-size:20px;">
+    </div>
+
+    <script>
+        var bgColor = document.querySelector(".js-back-color")
+        var textColor = document.querySelector(".js-text-color")
+        var Backlabel = document.querySelector(".back-label")
+        var textlabel = document.querySelector(".text-label")
+
+        var body = document.querySelector("body")
+
+        bgColor.addEventListener('keyup',function(event){
+            Backlabel.style.backgroundColor=event.target.value
+        })
+
+        textColor.addEventListener('keyup',function(event){
+            textColor.style.color=event.target.value
+        })
+
+        bgColor.addEventListener('keyup', function(event){
+            var color = event.target.value;
+            switch(color)
+            {
+                case "red":
+                case "blue":
+                case "green":
+                body.style.backgroundColor=color;
+                break;
+                default:
+                    body.style.backgroundColor="grey"
+                    break;
+            }
+        })
+    </script>
+
+</body>
+</html>
