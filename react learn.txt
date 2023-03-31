@@ -1,0 +1,378 @@
+
+
+
+
+react is view library of javascript containing jsx and javascript
+
+JSX is java script extension with has xml type syntax and we can use html in jsx which is converted into react element 
+
+javascript can also be used in JSX in flower brackets
+
+react is virtual dom created with respect to html and when there is change in data the react reacts and changes part where it needs to change into html dom
+
+JSx element always takes a parent element with bunch of child element or the code will not be transpiled.
+
+div
+h1
+p
+span
+/div
+
+
+ReactDom. : it is used to display element into the html dom 
+using 
+ReactDom.render()
+
+render() : render is used to show the data and where it must be displayed
+
+const element=<h1>hello world </h1>;
+
+ReactDom.render(element,getElementById('root');
+
+
+
+components: this are javascript functions that accepts arbitrary inputs called PROPS and react returns what to display on the screen
+
+component are ui independent reusable and and we can work on piece of it at isolation.
+
+
+
+component takes in argument which is prop 
+
+jsx  cant have expession must be used with another variable.
+
+class Hello(prop){
+	return <p> hello , {prop.name}</p>;
+}
+
+function hi(){
+	return <Hello name="ren" />;
+}
+
+
+javascript expression is a prop can be used with {}
+
+
+if for are not expression and cant be used jsx directly.
+
+example:
+
+function NumberIs(proper){
+let Is;
+
+	if(proper.number%2==0)
+		Is <span>even</span>
+	else{
+		Is<span>odd</span>
+	}
+
+return <div> {props.number} is an {Is} number </div>;
+}
+
+
+
+
+creating a component
+
+src/components.jsx
+
+import React ,{components} from 'react';
+
+class Counter extends components{
+	render(){
+		return <h1> hello world</h1>;
+}	
+
+}
+
+export default counter;
+
+synax exp: here the components.jsx is created with javascript xml extension.
+first we import react render function with {components} from react
+
+creating our class Counter (start with capital always becos the jsx will consider small case as normal html tag when used
+
+<div> ,<Component/>
+which extends and inherits from component class.
+ then what we want to render usign jsx: return <h1> something</h1>
+
+end of class
+
+export default Counter ; 
+
+export has named export and default export which is used to import
+this can also we used with the class or function.
+
+ex: export default class name
+
+export default can only used once  for 
+
+import Y from ./react
+here y is something which is used to import which is declared localy
+
+import y ,{one,two} from ./module
+
+we can also import named and default export together.
+
+
+
+@
+index.js
+
+return must end in one line with semi-colan or use ();
+return(
+something
+); for using expression or nesting.
+
+React.Fragment is used in place of div as parent element to nest html elements.
+ this React.Fragment doesn't show up in html html but creates a container.
+
+
+state();
+this method hold the data of the Component
+
+state{
+	count:0,
+};
+
+this.state.count ; this points towrds the count in method 
+
+we can also store this 
+const {count}=this.state;
+
+wrting a method=
+
+formatCount(){
+return count===0 ? 'zero': 'count';
+}
+
+
+jsx: <span>{this.formatCount()}</span>
+
+style{
+fontsize:10,   	: only number will be converted into 10px
+color:'red'
+};
+
+style={this.styles} : using styles in jsx dynamically.
+
+or style={{color:'red'}}
+
+adding class in react has keyword className becos class is already taken.
+
+
+
+adding classes dynamically.
+
+let classes="badge m-2 badge-"
+
+className={classes}
+
+or 
+
+getbadgeclasses(){
+let classes="badge m-2 badge-"
+classes += this.state.count === 0 ? "warning" : "primary";
+return classes;
+}
+
+className={this.getbadgeclasses}
+
+
+to render a list in react
+declare a object in state. list:['list1','list2','list3'],
+
+
+then render it using map as it is array and key for object.
+
+<ul>
+{this.state.list.map(arrowkey=> <li key={arrowkey.id}>{arrowkey}</li>)}
+</ul>
+
+the key value must be unique for ids.
+
+
+conditional rendering in react 
+
+renderTags(){
+	if(this.state.tag.length=== 0 ) return <p> zero tags </p>;
+	return <u> {this.state.tag.map(key => <li key="unique value">{key}</li>)} </u>;
+}
+
+render(){
+ <div>
+
+ {this.state.tag.length === 0} && "please create a list"}
+
+ {this.renderTags()}
+ </div>
+};
+
+%%%%
+
+event handling
+
+onClick is a propety C with camel case capital
+
+handleIncremnt(){
+console.log("increment",this);
+}
+
+
+onClick={this.handelncrement}
+
+we can connect the method for onclick with class constructor or arrow function in the method.
+
+class new extends parent(){
+ 
+objects,
+}
+
+constructor(){
+super();
+this.method.bind(this);
+}
+
+
+or 
+method = () => {
+console.log("print",this)
+
+we using method bind() to use this keyword to link method to the class.
+
+
+
+$$$$
+
+to update the state 
+ we use method setState({pass the objects});
+
+this.setState({count:this.state.count+1});
+
+
+
+#####
+
+to pass a argument in a written funtion we nest a function inside or use arrow functions
+
+
+function= () => {
+return;
+}
+
+functions1 =() =>{
+this.fucntions(id:1);
+}
+
+
+or use arrow function when calling an event.
+
+onClick={() => this.function(product)}
+
+
+
+counters ;
+
+creating tree of components.
+
+
+
+to set the value
+
+use this.props which has property of the attributes and data
+
+count:this.props.count,
+
+
+for children on <jsx element>
+<child>now</child>
+</jsx element>
+
+{this.props.children}
+
+
+raising and handling the event.
+
+the component owing the piece of state should be the one where we modify it.
+
+state={
+objects
+}
+
+raise the function to modify
+
+handleDelete = () => {
+console.log('event');
+}
+
+
+in components raise a property or props
+
+onDelete={this.handleDelete}
+
+
+place where event is handled
+
+button onClick={this.props.onDelete}
+
+
+
+filter method is used to change the array where the condition is set by function.
+
+variable.filter(function);
+
+
+componentkey={componentkey};
+
+this method is used to name props that can be used once , instead declaring new props again and again.
+
+
+handleDelete=(componentId)=>{
+const component in state = this.state.component.filter(c => c.id !== componentId(parameter)
+this.setState{component};
+}
+
+filter method
+this method gives new array with condition set by the functions
+
+variable.filter(function);
+
+indexOf() method. gives the index value of specified variable
+
+const words=['one','two','three'];
+
+words.indexOf('one');
+
+
+stateless functions components(sfc); this uses functions instead of class . pass props and arguement.
+
+
+destructuring the arguments
+
+this.props.function =  {function}
+
+this method will declare a variable in destruturing way
+
+const {function, function,}=this.props
+
+or passing in arguments:
+
+functions=({functions})=> {
+
+
+return {functions}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
